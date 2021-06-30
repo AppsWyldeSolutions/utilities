@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+  "hideSelection": true,
+  "hideColumnHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-wrap": "wrap",
+      "align-items": "stretch",
+      "flex-direction": "row",
+      "max-width": "500px",
+      "max-height": "40px",
+      "padding": "0px",
+      "margin-top": "-12px",
+      "margin-bottom": "12px",
+      "margin-left": "-5px"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+              "margin": "0 0 8px"	  
+        },
+        "children": [
+          {
+            "elmType": "a",
+	          "txtContent": "[$Title]",
+            "attributes": {
+	          "href": "[$URL]",
+                 "target": "_blank"
+            },
+	          "style": {
+    		    "font-size": "18px",
+    		    "font-weight": "400",
+    		    "line-height": "1.4em",
+		        "color": "#CA5010"
+	          }
+          }
+        ]
+      }
+    ]
+  }
+}
